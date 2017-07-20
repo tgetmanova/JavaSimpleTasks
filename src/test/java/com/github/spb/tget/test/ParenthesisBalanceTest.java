@@ -71,7 +71,7 @@ public class ParenthesisBalanceTest {
 
     @Test(dataProvider = "getTestCasesMultiTypes")
     public void parenthesisBalance_isBalancedComplex_ShouldReturnTrue_forBalancedTexts(String textToValidate, boolean expectedResult) {
-        boolean actualResult = ParenthesisBalance.isBalancedComplex(textToValidate);
+        boolean actualResult = ParenthesisBalance.isBalancedMultiple(textToValidate);
         Assert.assertEquals(actualResult, expectedResult, "Incorrect isBalancedComplex result");
     }
 }
